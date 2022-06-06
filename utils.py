@@ -1,4 +1,5 @@
 import requests
+import pprint
 import json
 
 def currency_rates(a):
@@ -7,4 +8,3 @@ def currency_rates(a):
     dict_json = json.loads(response.text)
     print(dict_json['Valute'][a]['Value'])
 
-currency_rates('EUR')
